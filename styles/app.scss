@@ -127,3 +127,17 @@ h3 {
   display: inline-block;
   margin: 0 $gutter;
 }
+
+@media screen and (min-width: 500px) and (max-width: 980px) {
+  .hero {
+    background: green;
+  }
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 650px) {
+  .hero {
+    background: purple;
+  }
+}
