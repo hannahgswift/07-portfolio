@@ -3,7 +3,7 @@ $project-black: #000;
 $project-white: #fff;
 $project-blue: #0ac6d9;
 
-// @import 'yoga';
+@import 'yoga';
 @import 'normalize';
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
@@ -20,6 +20,12 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   font-family: sans-serif;
 }
 
+.nav-img {
+  width: auto;
+  height: 3rem;
+  padding: 0.4rem;
+}
+
 .top-nav {
   background: $project-black;
 }
@@ -32,6 +38,10 @@ a {
   text-decoration: none;
   color: $project_white;
   padding: $gutter;
+
+  &:hover {
+    color: #D75A4A;
+  }
 }
 
 .nav-list {
@@ -48,6 +58,7 @@ a {
 .hero {
   background: $project-blue;
   text-align: center;
+  padding: $gutter;
 }
 
 .hero__text {
@@ -60,13 +71,48 @@ a {
 
 .main-content {
   background: gray;
-  margin: 0 auto;
+  margin: $gutter auto;
   width: 60rem;
 }
 
-.projects {
-  background: lightblue;
+h3 {
+  text-align: center;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row {
+  background: lightblue;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.img-container {
+  width: 20rem - $gutter;
+  display: inline-block;
+  margin: $gutter;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0.3rem 0.3rem 0.3rem lightgray;
+}
+
+.project-description {
+  border: 2px solid red;
+  display: inline-block;
+  margin: $gutter;
+  width: 40rem - $gutter;
+}
+
+
 
 .footer-group {
   background: $project-black;
