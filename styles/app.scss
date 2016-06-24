@@ -1,6 +1,59 @@
-// @import 'yoga';
-// @import 'normalize';
+$gutter: 1rem;
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+// @import 'yoga';
+@import 'normalize';
+
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
 @import 'box-sizing';
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  background: yellow;
+  font-family: sans-serif;
+}
+
+.top-nav {
+  background: pink;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list__item {
+  display: inline-block;
+  margin: 0 $gutter;
+}
+
+.hero {
+  background: tan;
+  text-align: center;
+}
+
+.main-content {
+  background: gray;
+  margin: 0 auto;
+  width: 60rem;
+}
+
+.footer-group {
+  background: green;
+
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    display: flex;
+  }
+}
