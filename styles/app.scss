@@ -1,4 +1,7 @@
 $gutter: 1rem;
+$project-black: #000;
+$project-white: #fff;
+$project-blue: #0ac6d9;
 
 // @import 'yoga';
 @import 'normalize';
@@ -11,18 +14,24 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 
   background: yellow;
   font-family: sans-serif;
 }
 
 .top-nav {
-  background: pink;
+  background: $project-black;
 }
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $project_white;
+  padding: $gutter;
 }
 
 .nav-list {
@@ -37,8 +46,16 @@ ul {
 }
 
 .hero {
-  background: tan;
+  background: $project-blue;
   text-align: center;
+}
+
+.hero__text {
+  color: $project-black;
+}
+
+.hero__subtext {
+  color: $project_white;
 }
 
 .main-content {
@@ -47,13 +64,20 @@ ul {
   width: 60rem;
 }
 
-.footer-group {
-  background: green;
+.projects {
+  background: lightblue;
+}
 
+.footer-group {
+  background: $project-black;
+  color: $project-white;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
 
-  &__item {
-    display: flex;
-  }
+.footer-group__item {
+  display: inline-block;
+  margin: 0 $gutter;
 }
