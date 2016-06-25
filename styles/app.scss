@@ -1,7 +1,7 @@
 $gutter: 1rem;
 $project-black: #000;
 $project-white: #fff;
-$project-blue: #0ac6d9;
+$project-blue: #4B6DAA;
 
 @import 'yoga';
 @import 'normalize';
@@ -16,8 +16,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   flex-direction: column;
   height: 100%;
 
-  background: yellow;
-  font-family: sans-serif;
+  // background: #1b9e4b;
+  font-family: 'Raleway', sans-serif;
 }
 
 .nav-img {
@@ -28,6 +28,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 .top-nav {
   background: $project-black;
+  text-transform: uppercase;
 }
 
 ul {
@@ -40,7 +41,7 @@ a {
   padding: $gutter;
 
   &:hover {
-    color: #D75A4A;
+    color: $project-blue;
   }
 }
 
@@ -63,10 +64,12 @@ a {
 
 .hero__text {
   color: $project-black;
+  // text-transform: uppercase;
 }
 
 .hero__subtext {
   color: $project_white;
+  // text-transform: uppercase;
 }
 
 .main-content {
@@ -133,6 +136,22 @@ h3 {
     background: green;
   }
 
+  .page {
+    max-width: 980px;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .img-container {
+    width: 50%;
+  }
+
+  .project-description {
+    width: 50%;
+  }
+
 
 }
 
@@ -140,4 +159,39 @@ h3 {
   .hero {
     background: purple;
   }
+
+  .page {
+    max-width: 650px;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .img-container, .project-description {
+    width: 100%;
+    margin: $gutter 0;
+  }
+
+  .box-model, .mockup {
+    order: -1;
+  }
+
+
+
+
+
+
+
 }
