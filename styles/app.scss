@@ -64,16 +64,14 @@ a {
 
 .hero__text {
   color: $project-black;
-  // text-transform: uppercase;
 }
 
 .hero__subtext {
   color: $project_white;
-  // text-transform: uppercase;
 }
 
 .main-content {
-  background: gray;
+  // background: gray;
   margin: $gutter auto;
   width: 60rem;
 }
@@ -89,33 +87,44 @@ h3 {
 }
 
 .row {
-  background: lightblue;
+  // background: lightblue;
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: center;
+
+  // border: 2px solid black;
+}
+
+.project-description:nth-child(odd) {
+  margin-top: -$gutter;
+  margin-bottom: -$gutter;
 }
 
 .img-container {
-  width: 20rem - $gutter;
+  width: 25%;
   display: inline-block;
   margin: $gutter;
+}
+
+.img-container:nth-child(odd) {
+  margin-right: 0;
+}
+
+.img-container:nth-child(even) {
+  margin-left: 0;
 }
 
 .project-img {
   width: 100%;
   height: auto;
-  box-shadow: 0.3rem 0.3rem 0.3rem lightgray;
 }
 
 .project-description {
-  border: 2px solid red;
   display: inline-block;
   margin: $gutter;
-  width: 40rem - $gutter;
+  width: 75%;
 }
-
-
 
 .footer-group {
   background: $project-black;
@@ -131,6 +140,7 @@ h3 {
   margin: 0 $gutter;
 }
 
+/* Tablet Styles */
 @media screen and (min-width: 500px) and (max-width: 980px) {
   .hero {
     background: green;
@@ -144,8 +154,14 @@ h3 {
     width: 100%;
   }
 
+
   .img-container {
     width: 50%;
+  }
+
+  .img-container:nth-child(even) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .project-description {
@@ -155,6 +171,7 @@ h3 {
 
 }
 
+/* Smartphone Styles */
 @media screen and (min-width: 320px) and (max-width: 650px) {
   .hero {
     background: purple;
@@ -170,7 +187,6 @@ h3 {
 
   .container {
     width: 100%;
-    display: flex;
   }
 
   .row {
@@ -180,18 +196,51 @@ h3 {
   }
 
   .img-container, .project-description {
-    width: 100%;
-    margin: $gutter 0;
+    width: 95%;
+    margin-top: $gutter;
+    margin-bottom: 0;
+  }
+
+  .project-description:nth-child(odd) {
+    margin-top: $gutter;
+    margin-bottom: $gutter;
   }
 
   .box-model, .mockup {
     order: -1;
   }
+}
 
+/** CITY PAGE STYLES **/
 
+.nash-row {
+  display: flex;
+  justify-content: center;
+}
 
+.nash-img {
+  margin: $gutter;
+}
 
+.first-one-third-div {
+  background-image: url(img/IMG_5597.JPG);
+  background-size: cover;
+  height: 20rem;
+  width: 20rem;
+  overflow: hidden;
+  position: relative;
+}
 
+.second-one-third-div {
+  background-image: url(img/IMG_5599.JPG);
+  background-size: cover;
+  height: 20rem;
+  width: 20rem;
+  overflow: hidden;
+  position: relative;
+}
 
-
+.two-thirds {
+  height: 20rem;
+  width: auto;
 }
