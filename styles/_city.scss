@@ -1,0 +1,68 @@
+/** CITY PAGE STYLES **/
+.nash-row {
+  display: flex;
+  justify-content: center;
+}
+
+.nash-img {
+  margin: $gutter;
+  // flex-grow: 1;
+}
+
+.first-one-third-div {
+  background-image: url("img/IMG_5598.JPG");
+  background-size: cover;
+  height: 20rem;
+  width: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.second-one-third-div {
+  background-image: url("img/IMG_5599.JPG");
+  background-size: cover;
+  height: 20rem;
+  width: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.first-two-thirds-div {
+  background-image: url("img/IMG_5597.JPG");
+  background-size: cover;
+  height: 20rem;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+}
+
+.second-two-thirds-div {
+  background-image: url("img/IMG_5596.JPG");
+  background-size: cover;
+  height: 20rem;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+}
+
+.invisible-par {
+  display: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: $project-white;
+  background: gray;
+}
+
+.nash-img:hover .invisible-par {
+  display: block;
+  padding: $gutter;
+}
+
+.img-link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0;
+}
