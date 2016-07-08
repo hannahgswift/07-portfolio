@@ -12,6 +12,11 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'city';
 
 
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -200,6 +205,11 @@ h3 {
     width: 95%;
     margin-top: $gutter;
     margin-bottom: 0;
+  }
+
+  .img-container {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .project-description:nth-child(odd) {
