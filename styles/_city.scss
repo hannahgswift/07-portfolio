@@ -9,49 +9,49 @@
 }
 
 .first-one-third-div {
-  background-image: url("img/IMG_5598.JPG");
-  background-size: cover;
-  height: 20rem;
-  width: 20rem;
-  overflow: hidden;
   position: relative;
+  width: 20rem;
+  height: 20rem;
+  background-image: url('img/IMG_5598.JPG');
+  background-size: cover;
+  overflow: hidden;
 }
 
 .second-one-third-div {
-  background-image: url("img/IMG_5599.JPG");
-  background-size: cover;
-  height: 20rem;
-  width: 20rem;
-  overflow: hidden;
   position: relative;
+  width: 20rem;
+  height: 20rem;
+  background-image: url('img/IMG_5599.JPG');
+  background-size: cover;
+  overflow: hidden;
 }
 
 .first-two-thirds-div {
-  background-image: url("img/IMG_5597.JPG");
-  background-size: cover;
-  height: 20rem;
-  width: auto;
-  overflow: hidden;
   position: relative;
   flex-grow: 1;
+  width: auto;
+  height: 20rem;
+  background-image: url('img/IMG_5597.JPG');
+  background-size: cover;
+  overflow: hidden;
 }
 
 .second-two-thirds-div {
-  background-image: url("img/IMG_5596.JPG");
-  background-size: cover;
-  height: 20rem;
-  width: auto;
-  overflow: hidden;
   position: relative;
   flex-grow: 1;
+  width: auto;
+  height: 20rem;
+  background-image: url('img/IMG_5596.JPG');
+  background-size: cover;
+  overflow: hidden;
 }
 
 .invisible-par {
   display: none;
+  background: #808080;
+  color: $project-white;
   font-size: 2rem;
   font-weight: bold;
-  color: $project-white;
-  background: gray;
 }
 
 .nash-img:hover .invisible-par {
@@ -60,8 +60,8 @@
 }
 
 .img-link {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
   padding: 0;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
 }

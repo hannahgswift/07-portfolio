@@ -35,14 +35,10 @@ ul {
   text-transform: uppercase;
 }
 
-ul {
-  list-style: none;
-}
-
 a {
-  text-decoration: none;
-  color: $project_white;
   padding: $gutter;
+  color: $project_white;
+  text-decoration: none;
 
   &:hover {
     color: $project-blue;
@@ -51,8 +47,8 @@ a {
 
 .nav-list {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-list__item {
@@ -61,9 +57,9 @@ a {
 }
 
 .hero {
+  padding: $gutter;
   background: $project-blue;
   text-align: center;
-  padding: $gutter;
 }
 
 .hero__text {
@@ -92,8 +88,8 @@ h3 {
 .row {
   display: flex;
   flex-direction: row;
-  width: 100%;
   align-items: center;
+  width: 100%;
 }
 
 .project-description:nth-child(odd) {
@@ -102,18 +98,20 @@ h3 {
 }
 
 .img-container {
-  width: 25%;
   display: inline-block;
+  width: 25%;
   margin: $gutter;
+
+  &:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  &:nth-child(even) {
+    margin-left: 0;
+  }
 }
 
-.img-container:nth-child(odd) {
-  margin-right: 0;
-}
 
-.img-container:nth-child(even) {
-  margin-left: 0;
-}
 
 .project-img {
   width: 100%;
@@ -122,17 +120,17 @@ h3 {
 
 .project-description {
   display: inline-block;
-  margin: $gutter;
   width: 75%;
+  margin: $gutter;
 }
 
 .footer-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   background: $project-black;
   color: $project-white;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer-group__item {
@@ -153,12 +151,13 @@ h3 {
 
   .img-container {
     width: 50%;
+
+    &:nth-child(even) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
-  .img-container:nth-child(even) {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
 
   .project-description {
     width: 50%;
@@ -169,10 +168,6 @@ h3 {
 
 // /* Smartphone Styles */
 @media screen and (min-width: 320px) and (max-width: 650px) {
-  // .hero {
-  //   background: purple;
-  // }
-
   .page {
     max-width: 650px;
   }
@@ -191,23 +186,26 @@ h3 {
     width: 100%;
   }
 
-  .img-container, .project-description {
+  .img-container,
+  .project-description {
     width: 95%;
     margin-top: $gutter;
     margin-bottom: 0;
+
+    &:nth-child(odd) {
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+    }
   }
 
   .img-container {
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 
-  .project-description:nth-child(odd) {
-    margin-top: $gutter;
-    margin-bottom: $gutter;
-  }
 
-  .box-model, .mockup {
+  .box-model,
+  .mockup {
     order: -1;
   }
 }
